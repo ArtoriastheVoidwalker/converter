@@ -9,7 +9,6 @@ from loguru import logger
 def import_data(import_file: str) -> list:
     data = []
     tree = ET.parse(import_file)
-    # tree = ET.parse("Задание.xml")
     root = tree.getroot()
 
     file_name_xml = import_file
